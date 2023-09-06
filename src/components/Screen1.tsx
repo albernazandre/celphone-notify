@@ -1,7 +1,7 @@
 import React from 'react';
 import './Screen1.css';
 
-interface Screen1Props {
+export type Screen1Props = {
     title: string;
     description: string;
 }

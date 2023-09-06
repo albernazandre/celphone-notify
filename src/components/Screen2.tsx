@@ -4,7 +4,7 @@ import leftArrow from '../assets/left-arrow.png';
 import clubeLogo from '../assets/clubeLogo.png';
 
 
-interface Screen2Props {
+export type Screen2Props = {
     barText?: string,
     logo?: string;
     pageTitle?: string;

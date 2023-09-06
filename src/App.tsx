@@ -2,7 +2,7 @@ import "./App.css";
 import Screen1 from "./components/Screen1";
 import Screen2 from "./components/Screen2";
 
-interface IProps {
+export type IProps = {
   title: string;
   description: string;
   barText?: string;
