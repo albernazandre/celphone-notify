@@ -5,15 +5,15 @@ import clubeLogo from '../assets/clubeLogo.png';
 
 
 interface Screen2Props {
-    barText: string,
-    logo: string;
-    pageTitle: string;
-    notificationTitle: string;
-    notificationDescription: string;
-    code: string;
-    discountRules: string;
-    buttonText: string;
-    buttonLink: string;
+    barText?: string,
+    logo?: string;
+    pageTitle?: string;
+    notificationTitle?: string;
+    notificationDescription?: string;
+    code?: string;
+    discountRules?: string;
+    buttonText?: string;
+    buttonLink?: string;
 }
 
 const Screen2: React.FC<Screen2Props> = (props) => {

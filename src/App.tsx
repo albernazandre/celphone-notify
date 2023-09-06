@@ -1,28 +1,49 @@
-import React from 'react';
-import './App.css';
-import Screen1 from './components/Screen1';
-import Screen2 from './components/Screen2';
-import testLogo from './assets/logo.png';
+import React from "react";
+import "./App.css";
+import Screen1 from "./components/Screen1";
+import Screen2 from "./components/Screen2";
+import testLogo from "./assets/logo.png";
 
-function App() {
+interface IProps {
+  title: string;
+  description: string;
+  barText?: string;
+  logo?: string;
+  pageTitle?: string;
+  notificationTitle?: string;
+  notificationDescription?: string;
+  code?: string;
+  discountRules?: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+function App({
+  title,
+  description,
+  barText,
+  buttonLink,
+  buttonText,
+  code,
+  discountRules,
+  logo,
+  notificationDescription,
+  notificationTitle,
+  pageTitle,
+}: IProps) {
   return (
     <div className="App">
-
-      <Screen1
-        title="Que tal aproveitar..."
-        description="Coquinha gelada para todos hehehe"
-      />
-
+      <Screen1 title={title} description={description} />
       <Screen2
-        barText='Olha o desconto'
-        logo={testLogo}
-        pageTitle="Vai uma coquinha?"
-        notificationTitle="Mock Title 2"
-        notificationDescription="Você merece um passeio para as ilhas Cayman. Se alguém disser que você foi, só negue."
-        code="ABC123"
-        discountRules="Se você quiser 10% de desconto, terá de pedir ao Seu Juvenal, tomador de cachaça e bom de prosa."
-        buttonText="Peça o seu!"
-        buttonLink="https://www.example.com"
+        barText={barText}
+        logo={logo}
+        pageTitle={pageTitle}
+        notificationTitle={notificationTitle}
+        notificationDescription={notificationDescription}
+        code={code}
+        discountRules={discountRules}
+        buttonText={buttonText}
+        buttonLink={buttonLink}
       />
     </div>
   );
