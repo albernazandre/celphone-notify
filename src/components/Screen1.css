@@ -1,0 +1,29 @@
+.screen1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("/src/assets/notificationScreen.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-container {
+  margin-top: -65px;
+  margin-left: 29px;
+}
+
+.title-notification {
+  font-size: 9px;
+}
+
+.descripition-notification {
+  position: absolute;
+  font-size: 8px;
+  margin-top: -6px;
+  color: #555;
+}
